@@ -9,12 +9,7 @@ font-family: 'PT Sans', sans-serif;
 	font-family: "Poppins", sans-serif;
 }
 
-.nav-link {
-	text-decoration: none;
-}
-.nav-items {
-	text-decoration: none;
-}
-.nav-items:hover {
-	text-decoration: underline;
+.banner-img {
+	max-height: 90vh;
+	object-fit: cover;
 }
