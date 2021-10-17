@@ -2,12 +2,15 @@ import React from "react";
 import { Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
+import logo from "../../img/logo.png";
 
 const Header = () => {
 	return (
 		<Navbar className="navbar">
 			<Container>
-				<Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+				<Navbar.Brand as={Link} to="/">
+					<img src={logo} width="70" alt="" />
+				</Navbar.Brand>
 				<Navbar.Toggle />
 				<Navbar.Collapse className="justify-content-end">
 					<Navbar.Text className="d-flex align-items-center">
@@ -25,7 +28,7 @@ const Header = () => {
 								Home
 							</Link>
 						</div>
-						<Link to="login" className="login-link">
+						<Link to="login" className="login-link rounded-pill">
 							Login
 						</Link>
 					</Navbar.Text>
