@@ -1,0 +1,18 @@
+.navbar {
+	background-color: #42b3e5;
+	color: white;
+}
+.nav-link {
+	text-decoration: none;
+}
+.nav-items {
+	text-decoration: none;
+}
+.nav-items:hover {
+	text-decoration: underline;
+}
+
+.login-link {
+	background: white;
+	padding: 5px 10px;
+}
