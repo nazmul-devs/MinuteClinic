@@ -28,7 +28,7 @@ const Header = () => {
 								Home
 							</Link>
 						</div>
-						<Link to="login" className="login-link rounded-pill">
+						<Link to="/login" className="login-link rounded-pill">
 							Login
 						</Link>
 					</Navbar.Text>

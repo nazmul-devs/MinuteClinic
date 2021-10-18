@@ -2,9 +2,11 @@
 	height: 50%;
 }
 .banner-text .title {
+	border-radius: 20px;
+	background: #0000007c;
 	font-size: 65px;
 	font-weight: 600;
-	color: black;
+	color: #42b3e5;
 	text-transform: uppercase;
 }
 .banner-text .text {

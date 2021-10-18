@@ -15,7 +15,7 @@ const Banner = () => {
 					alt="First slide"
 				/>
 				<Carousel.Caption className="banner-text">
-					<h3 className="title">Best care and batter Doctor</h3>
+					<h3 className="title">Be Attentive to Youe Health Care</h3>
 					<p className="text">
 						MedHealth are a Professional Medical and Health Services
 						Provider Institution.Suitable for Hospital , Dentists,

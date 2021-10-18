@@ -1,0 +1,40 @@
+.login-container {
+	padding-top: 40px;
+	background: url(../../img/doctor-stethoscope-c.jpg) no-repeat center;
+	height: 87vh;
+	background-size: cover;
+}
+
+.login-form {
+	width: 500px;
+	padding: 20px;
+}
+.login-title {
+	color: #42b3e5;
+}
+
+.btn-all {
+	border: none;
+	padding: 7px 16px;
+	color: white;
+	margin: 0 15px;
+}
+.btn-fb {
+	background: #3b5998;
+}
+.btn-fb:hover {
+	background: #122858;
+}
+.btn-google {
+	background: #dd4b39;
+}
+.btn-google:hover {
+	background: #a32b1c;
+}
+
+.btn-github {
+	background: #2e2e2e;
+}
+.btn-github:hover {
+	background: #181818;
+}
