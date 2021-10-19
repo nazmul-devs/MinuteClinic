@@ -1,0 +1,27 @@
+.footer {
+	background: #0c0c85e7;
+}
+.footer p {
+	font-size: 14px;
+}
+.footer a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 10px 0;
+}
+a:hover {
+	color: #74d3fc;
+}
+
+.footer-icon {
+	color: #74d3fc;
+}
+
+.copy-right a {
+	margin-right: 15px;
+}
+.copy-right a:hover {
+	color: #74d3fc;
+}
