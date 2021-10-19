@@ -1,0 +1,38 @@
+[
+	{
+		"id": "01",
+		"name": "Gastrology",
+		"img": "https://transform.octanecdn.com/crop/600x400/https://octanecdn.com/reidhealthorg/reidhealthorg_228947124.jpeg",
+		"des": "Gastroenterologists are physicians trained in your gastrointestinal (GI) tract and liver to diagnose and treat issues. After medical school, they have 5 to 6 years of dedicated education. You might need to visit a health care gastroenterologist in Edmond, OK, with your issues in the esophagus, the tube connecting your stomach and abdomen, especially that is related to small and big intestine, liver, colon, rectum, bile ducts, gallbladder, pancreas, etc.A gastrologist is a physician specializing in stomach research, its structure, functions, and illnesses. Gastro is derived from the Greek word 'gaster' referring to the stomach."
+	},
+	{
+		"id": "02",
+		"name": "Ophthalmology",
+		"img": "https://www.ttuhsc.edu/medicine/images/ophthalmology/ttuhsc-ophthalmology01.jpg",
+		"des": "An ophthalmologist is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat.When it's time to get your eyes checked, make sure you are seeing the right eye care professional for your needs. Each member of the eye care team plays an important role in providing eye care, but many people confuse the different providers and their roles in maintaining your eye health. The levels of training and expertise—and what they are allowed to do for you—are the major difference between the types of eye care provider."
+	},
+	{
+		"id": "03",
+		"name": "Gynecology",
+		"img": "https://threebestrated.com/images/DrJazniyaTCuriocaMD-Tampa-FL.jpeg",
+		"des": "A gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. This includes the uterus, fallopian tubes, and ovaries and breasts.Anyone with female organs may see a gynecologist.  80% of those who see one are between 15 to 45 years old. "
+	},
+	{
+		"id": "04",
+		"name": "Dental Care",
+		"img": "https://southsidemedical.net/wp-content/uploads/2018/01/dental-check.jpg",
+		"des": "Brush teeth and gums at least twice a day. If you can, brush 30 minutes to 1 hour after every meal. Brushing removes plaque, a film of bacteria that clings to teeth. When bacteria in plaque come into contact with food, they produce acids. These acids lead to cavities.Place a pea-sized dab of fluoride toothpaste on the head of the toothbrush. (Use a soft toothbrush.)Place the toothbrush against the teeth at a 45-degree angle to the gum line.Move the brush across the teeth using a small circular motion (if using an electric toothbrush, hold it at the same angle against the teeth and gum line and let it do the work). Continue with this motion cleaning one tooth at a time. Keep the tips of the bristles against the gum line. Avoid pressing so hard that the bristles lie flat against the teeth. (Only the tips of the toothbrush clean the teeth.) Let the bristles reach into spaces between teeth."
+	},
+	{
+		"id": "05",
+		"name": "Neurology",
+		"img": "https://neurocnv.com/wp-content/uploads/2016/01/banner4.jpg",
+		"des": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions:Central nervous system: the brain and spinal cordPeripheral nervous system: all other neural elements, such as eyes, ears, skin, and other 'sensory receptors'A doctor who specializes in neurology is called a neurologist. The neurologist treats disorders that affect the brain, spinal cord, and nerves, such as:Cerebrovascular disease, such as strokeDemyelinating diseases of the central nervous system, such as multiple sclerosis Headache disorders"
+	},
+	{
+		"id": "06",
+		"name": "Cosmetic Surgery",
+		"img": "https://static.dw.com/image/58186817_303.jpg",
+		"des": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns. While reconstructive surgery aims to reconstruct a part of the body or improve its functioning, cosmetic (or aesthetic) surgery aims at improving the appearance of it.The word plastic in plastic surgery means 'reshaping' and comes from the Greek πλαστική (τέχνη), plastikē (tekhnē), the art of modelling of malleable flesh.[3] This meaning in English is seen as early as 1598.[4] The surgical definition of plastic first appeared in 1839, preceding the modern engineering material made from petroleum sense by 70 years."
+	}
+]
