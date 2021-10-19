@@ -1,6 +1,8 @@
 import React from "react";
+import "./ServiceDetails.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Container } from "react-bootstrap";
 import { useParams } from "react-router";
 
 const ServicesDetails = () => {
@@ -11,12 +13,20 @@ const ServicesDetails = () => {
 			.then((res) => res.json())
 			.then((data) => setServices(data));
 	}, []);
-	console.log(services);
+
+	const serviceDetails = services.find((svs) => svs.id === serviceId);
+	// const { name, img, des } = serviceDetails;
+
 	return (
-		<div>
-			<h2>service details</h2>
-			<h1>{serviceId}</h1>
-		</div>
+		<Container>
+			<div className="details-card w-75 mx-auto my-5">
+				<img src={serviceDetails?.img} alt="" />
+				<h2 className="my-3 fw-bold" style={{ color: "#42b3e5" }}>
+					{serviceDetails?.name}
+				</h2>
+				<p className="text-muted">{serviceDetails?.des}</p>
+			</div>
+		</Container>
 	);
 };
 
