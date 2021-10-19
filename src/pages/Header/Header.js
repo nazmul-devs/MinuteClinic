@@ -31,9 +31,18 @@ const Header = () => {
 							</Link>
 						</div>
 						{user.displayName ? (
-							<button className="logout-btn" onClick={logout}>
-								<i class="fas fa-sign-out-alt"></i> Logout
-							</button>
+							<>
+								<img
+									src={user.photoURL}
+									width="60"
+									height="60"
+									alt=""
+									className="rounded-circle mx-3"
+								/>
+								<button className="logout-btn" onClick={logout}>
+									<i class="fas fa-sign-out-alt"></i> Logout
+								</button>
+							</>
 						) : (
 							<Link to="/login" className="login-link rounded-pill">
 								Login

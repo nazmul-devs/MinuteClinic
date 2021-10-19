@@ -4,6 +4,7 @@ import {
 	GoogleAuthProvider,
 	onAuthStateChanged,
 	signOut,
+	GithubAuthProvider,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import InitialFirebase from "./InitialFirebase";
@@ -17,6 +18,12 @@ const UseFirebase = () => {
 		const googleProvider = new GoogleAuthProvider();
 
 		signInWithPopup(auth, googleProvider).then((result) => {
+			const user = result.user;
+		});
+	};
+	const githubSignIn = () => {
+		const gitProvider = new GithubAuthProvider();
+		signInWithPopup(auth, gitProvider).then((result) => {
 			const user = result.user;
 		});
 	};
@@ -37,7 +44,7 @@ const UseFirebase = () => {
 			}
 		});
 	}, []);
-	return { googleSignIn, user, logout };
+	return { googleSignIn, user, logout, githubSignIn };
 };
 
 export default UseFirebase;

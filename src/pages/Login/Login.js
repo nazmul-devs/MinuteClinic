@@ -4,10 +4,9 @@ import { Form, Button } from "react-bootstrap";
 import UseFirebase from "../../Firebase/UseFirebase";
 
 const Login = () => {
-	const { googleSignIn, user } = UseFirebase();
+	const { googleSignIn, githubSignIn } = UseFirebase();
 	return (
 		<div className="login-container">
-			<h2>{user.displayName}</h2>
 			<div className="login-form mx-auto bg-light rounded">
 				<Form>
 					<h2 className="login-title text-center text-uppercase pb-3 fw-bold">
@@ -30,11 +29,13 @@ const Login = () => {
 				<div className="login-with text-center">
 					<p>Or register with</p>
 					<div className="button-grp">
-						<button className="btn-fb btn-all">Facebook</button>
 						<button className="btn-google btn-all" onClick={googleSignIn}>
 							Google
 						</button>
-						<button className="btn-github btn-all">Github</button>
+						<button className="btn-github btn-all" onClick={githubSignIn}>
+							Github
+						</button>
+						<button className="btn-fb btn-all">Facebook</button>
 					</div>
 				</div>
 			</div>
