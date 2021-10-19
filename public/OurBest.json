@@ -1,0 +1,32 @@
+[
+	{
+		"id": "01",
+		"name": "Professional Staff",
+		"img": "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNhbCUyMHN0YWZmfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"
+	},
+	{
+		"id": "02",
+		"name": "Affordable Prices",
+		"img": "https://www.pikpng.com/pngl/b/343-3438583_best-price-guarantee-logo-best-price-clipart.png"
+	},
+	{
+		"id": "03",
+		"name": "Insurance Partners",
+		"img": "https://www.trigone-assurances.fr/img/TRIGONE-Partenaires.png"
+	},
+	{
+		"id": "04",
+		"name": "24/07 Support",
+		"img": "https://cdn1.vectorstock.com/i/1000x1000/31/10/24-hours-service-logo-design-icon-day-and-night-vector-28933110.jpg"
+	},
+	{
+		"id": "05",
+		"name": "Emergency Service",
+		"img": "http://www.medicoone.com/wp-content/uploads/2020/06/emergency.jpg"
+	},
+	{
+		"id": "06",
+		"name": "Online Consultancy",
+		"img": "https://quesystems.in/images/icon/products/online%20_consultancy.jpg"
+	}
+]

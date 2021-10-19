@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "../Services/Services";
 import Banner from "./Banner/Banner";
+import OurBest from "./OurBest/OurBest";
 
 const Home = () => {
 	return (
@@ -13,7 +14,7 @@ const Home = () => {
 						High Quality{" "}
 						<span style={{ color: "#42b3e5" }}>Services</span>
 					</h2>
-					<p className="w-50 mx-auto">
+					<p className="w-50 mx-auto text-muted">
 						Minute Clinic Are A Professional Medical & Health Care
 						Services Provider Institutions. Suitable For Hospitals,
 						Dentists, Gynecologists, Physiatrists.
@@ -21,6 +22,7 @@ const Home = () => {
 				</div>
 				<Services />
 			</div>
+			<OurBest />
 		</div>
 	);
 };

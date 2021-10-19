@@ -1,0 +1,14 @@
+.best-card {
+	background: #42b3e5;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.best-card:hover {
+	background: #021b26;
+}
+.best-card > img {
+	margin: 10px auto;
+	width: 300px;
+	height: 100px;
+	object-fit: cover;
+}

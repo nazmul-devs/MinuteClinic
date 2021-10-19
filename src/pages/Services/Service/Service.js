@@ -4,7 +4,6 @@ import "./Service.css";
 
 const Service = ({ service }) => {
 	const { name, img, des } = service;
-	console.log(name);
 	return (
 		<Col>
 			<Card className="border-0 service-card p-2">
