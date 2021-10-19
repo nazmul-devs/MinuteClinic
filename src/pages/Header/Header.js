@@ -3,8 +3,10 @@ import { Container, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../img/logo.png";
+import UseFirebase from "../../Firebase/UseFirebase";
 
 const Header = () => {
+	const { user, logout } = UseFirebase();
 	return (
 		<Navbar className="navbar">
 			<Container>
@@ -28,9 +30,15 @@ const Header = () => {
 								Home
 							</Link>
 						</div>
-						<Link to="/login" className="login-link rounded-pill">
-							Login
-						</Link>
+						{user.displayName ? (
+							<button className="logout-btn" onClick={logout}>
+								<i class="fas fa-sign-out-alt"></i> Logout
+							</button>
+						) : (
+							<Link to="/login" className="login-link rounded-pill">
+								Login
+							</Link>
+						)}
 					</Navbar.Text>
 				</Navbar.Collapse>
 			</Container>

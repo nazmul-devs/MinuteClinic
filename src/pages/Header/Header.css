@@ -19,3 +19,11 @@
 .login-link:hover {
 	box-shadow: 0 2px 2px #000000;
 }
+.logout-btn {
+	border: none;
+	padding: 6px 15px;
+	border-radius: 15px;
+}
+.logout-btn:hover {
+	box-shadow: 2px 2px 5px #000000;
+}

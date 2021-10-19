@@ -7,6 +7,7 @@ import Header from "./pages/Header/Header";
 import Login from "./pages/Login/Login";
 import Footer from "./pages/Footer/Footer";
 import ServicesDetails from "./pages/Services/ServiceDetails/ServicesDetails";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
 	return (
@@ -21,6 +22,9 @@ function App() {
 				</Route>
 				<Route path="/details/:serviceId">
 					<ServicesDetails />
+				</Route>
+				<Route path="*">
+					<NotFound />
 				</Route>
 			</Switch>
 			<Footer />

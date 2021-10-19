@@ -4,9 +4,10 @@ import { Form, Button } from "react-bootstrap";
 import UseFirebase from "../../Firebase/UseFirebase";
 
 const Login = () => {
-	const { googleSignIn } = UseFirebase();
+	const { googleSignIn, user } = UseFirebase();
 	return (
 		<div className="login-container">
+			<h2>{user.displayName}</h2>
 			<div className="login-form mx-auto bg-light rounded">
 				<Form>
 					<h2 className="login-title text-center text-uppercase pb-3 fw-bold">
