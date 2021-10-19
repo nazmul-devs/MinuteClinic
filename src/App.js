@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Header from "./pages/Header/Header";
 import Login from "./pages/Login/Login";
 import Footer from "./pages/Footer/Footer";
+import ServicesDetails from "./pages/Services/ServiceDetails/ServicesDetails";
 
 function App() {
 	return (
@@ -17,6 +18,9 @@ function App() {
 				</Route>
 				<Route path="/login">
 					<Login />
+				</Route>
+				<Route path="/details/:serviceId">
+					<ServicesDetails />
 				</Route>
 			</Switch>
 			<Footer />

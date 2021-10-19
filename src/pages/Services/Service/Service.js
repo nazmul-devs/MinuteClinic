@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Service.css";
 
 const Service = ({ service }) => {
-	const { name, img, des } = service;
+	const { name, img, des, id } = service;
 	return (
 		<Col>
 			<Card className="border-0 service-card p-2">
@@ -20,7 +21,9 @@ const Service = ({ service }) => {
 					<Card.Text style={{ textAlign: "justify", color: "gray" }}>
 						{des.slice(0, 100)}
 					</Card.Text>
-					<button className="btn-details ">Details</button>
+					<Link to={`/details/${id}`}>
+						<button className="btn-details ">Details</button>
+					</Link>
 				</Card.Body>
 			</Card>
 		</Col>

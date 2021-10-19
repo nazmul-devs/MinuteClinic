@@ -7,7 +7,7 @@ const Login = () => {
 		<div className="login-container">
 			<div className="login-form mx-auto bg-light rounded">
 				<Form>
-					<h2 className="login-title text-center text-uppercase pb-3">
+					<h2 className="login-title text-center text-uppercase pb-3 fw-bold">
 						Login here
 					</h2>
 					<Form.Group className="mb-3" controlId="formBasicEmail">

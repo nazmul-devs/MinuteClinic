@@ -8,6 +8,9 @@ font-family: 'PT Sans', sans-serif;
 	text-decoration: none;
 	font-family: "Poppins", sans-serif;
 }
+img {
+	object-fit: cover;
+}
 
 .banner-img {
 	max-height: 90vh;
