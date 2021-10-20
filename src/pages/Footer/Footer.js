@@ -40,15 +40,15 @@ const Footer = () => {
 					<Col>
 						<h2>Contact Info</h2>
 						<p>
-							<i class="fas fa-map-marker-alt footer-icon"></i> Banani
-							Block-D, Road-14, House-04 Dhaka
+							<i className="fas fa-map-marker-alt footer-icon"></i>{" "}
+							Banani Block-D, Road-14, House-04 Dhaka
 						</p>
 						<p>
-							<i class="fas fa-envelope footer-icon"></i>{" "}
+							<i className="fas fa-envelope footer-icon"></i>{" "}
 							support@domain.tld
 						</p>
 						<p>
-							<i class="fas fa-phone-alt footer-icon"></i>{" "}
+							<i className="fas fa-phone-alt footer-icon"></i>{" "}
 							+6221.2002.2012
 						</p>
 					</Col>

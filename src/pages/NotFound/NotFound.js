@@ -1,10 +1,10 @@
 import React from "react";
+import notFound from "../../img/notFound.jpg";
 
 const NotFound = () => {
 	return (
 		<div>
-			<img src="" alt="" />
-			<h2>page not found</h2>
+			<img src={notFound} style={{ width: "100%", height: "90vh" }} alt="" />
 		</div>
 	);
 };

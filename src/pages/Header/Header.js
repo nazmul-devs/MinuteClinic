@@ -40,7 +40,7 @@ const Header = () => {
 									className="rounded-circle mx-3"
 								/>
 								<button className="logout-btn" onClick={logout}>
-									<i class="fas fa-sign-out-alt"></i> Logout
+									<i className="fas fa-sign-out-alt"></i> Logout
 								</button>
 							</>
 						) : (

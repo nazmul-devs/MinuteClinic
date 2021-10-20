@@ -7,7 +7,7 @@ const Services = () => {
 	const services = useServices();
 	return (
 		<Container>
-			<Row xs={1} sm={2} md={3} className="g-5">
+			<Row xs={1} md={2} lg={3} className="g-5">
 				{services.map((service) => (
 					<Service key={service.id} service={service} />
 				))}
