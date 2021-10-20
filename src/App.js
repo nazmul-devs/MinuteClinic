@@ -8,27 +8,31 @@ import Login from "./pages/Login/Login";
 import Footer from "./pages/Footer/Footer";
 import ServicesDetails from "./pages/Services/ServiceDetails/ServicesDetails";
 import NotFound from "./pages/NotFound/NotFound";
+import AuthProvider from "./Hooks/AuthProvider";
+import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 
 function App() {
 	return (
-		<Router>
-			<Header />
-			<Switch>
-				<Route exact path="/">
-					<Home></Home>
-				</Route>
-				<Route path="/login">
-					<Login />
-				</Route>
-				<Route path="/details/:serviceId">
-					<ServicesDetails />
-				</Route>
-				<Route path="*">
-					<NotFound />
-				</Route>
-			</Switch>
-			<Footer />
-		</Router>
+		<AuthProvider>
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path="/">
+						<Home></Home>
+					</Route>
+					<Route path="/login">
+						<Login />
+					</Route>
+					<PrivateRoute path="/details/:serviceId">
+						<ServicesDetails />
+					</PrivateRoute>
+					<Route path="*">
+						<NotFound />
+					</Route>
+				</Switch>
+				<Footer />
+			</Router>
+		</AuthProvider>
 	);
 }
 

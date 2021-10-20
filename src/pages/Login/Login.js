@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Login.css";
 import { Form, Button, Container } from "react-bootstrap";
-import UseFirebase from "../../Firebase/UseFirebase";
+import UseAuth from "../../Hooks/UseAuth";
 
 const Login = () => {
 	const {
@@ -15,7 +15,7 @@ const Login = () => {
 		createUser,
 		newUser,
 		error,
-	} = UseFirebase();
+	} = UseAuth();
 
 	console.log(newUser);
 
