@@ -1,0 +1,51 @@
+.pricing-card {
+	border: 1px solid #0077efd2;
+}
+.basic {
+	background: #0076ef;
+	color: #fff;
+	font-weight: 700;
+}
+.price {
+	color: #0076ef;
+	font-weight: 700;
+	font-size: 70px;
+}
+.btn-price {
+	border: 3px solid #0076ef;
+	width: 100%;
+	background: none;
+	padding: 12px 0;
+	color: #0076ef;
+	font-weight: 600;
+	font-size: 20px;
+	transition: 0.2s;
+}
+.btn-price:hover {
+	background: #0076ef;
+	color: #fff;
+}
+
+.pro-pricing-card {
+	background: #0076ef;
+	color: #fff;
+	border: 1px solid #0076ef;
+}
+.pro {
+	font-weight: 700;
+	background: #359aff;
+}
+.pro-btn {
+	background: #359aff;
+	border: none;
+	width: 100%;
+	padding: 12px 0;
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;
+	transition: 0.2s;
+}
+.pro-btn:hover {
+	background: #fff;
+	color: #0076ef;
+}

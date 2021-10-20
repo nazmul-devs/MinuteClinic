@@ -10,6 +10,7 @@ import ServicesDetails from "./pages/Services/ServiceDetails/ServicesDetails";
 import NotFound from "./pages/NotFound/NotFound";
 import AuthProvider from "./Hooks/AuthProvider";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
+import Pricing from "./pages/Pricing/Pricing";
 
 function App() {
 	return (
@@ -22,6 +23,9 @@ function App() {
 					</Route>
 					<Route path="/login">
 						<Login />
+					</Route>
+					<Route path="/pricing">
+						<Pricing />
 					</Route>
 					<PrivateRoute path="/details/:serviceId">
 						<ServicesDetails />

@@ -24,8 +24,11 @@ const Header = () => {
 							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
 							</Link>
-							<Link className="nav-items p-2 text-white d-block" to="/">
-								Home
+							<Link
+								className="nav-items p-2 text-white d-block"
+								to="/pricing"
+							>
+								Pricing
 							</Link>
 							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
