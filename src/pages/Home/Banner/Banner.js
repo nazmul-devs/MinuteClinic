@@ -14,7 +14,7 @@ const Banner = () => {
 					src={banner1}
 					alt="First slide"
 				/>
-				<Carousel.Caption className="banner-text">
+				<Carousel.Caption className="banner-text d-none d-lg-block">
 					<h3 className="title">Be Attentive to Youe Health Care</h3>
 					<p className="text">
 						MedHealth are a Professional Medical and Health Services
@@ -30,7 +30,7 @@ const Banner = () => {
 					alt="Second slide"
 				/>
 
-				<Carousel.Caption className="banner-text">
+				<Carousel.Caption className="banner-text d-none d-lg-block">
 					<h3 className="title">Best care and batter doctora</h3>
 					<p className="text">
 						MedHealth are a Professional Medical and Health Services
@@ -46,7 +46,7 @@ const Banner = () => {
 					alt="Third slide"
 				/>
 
-				<Carousel.Caption className="banner-text">
+				<Carousel.Caption className="banner-text d-none d-lg-block">
 					<h3 className="title">Commited to trusted dental care</h3>
 					<p className="text">
 						MedHealth are a Professional Medical and Health Services

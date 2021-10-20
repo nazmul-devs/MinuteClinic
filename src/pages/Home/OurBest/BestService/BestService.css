@@ -8,7 +8,7 @@
 }
 .best-card > img {
 	margin: 10px auto;
-	width: 300px;
+	width: 50%;
 	height: 100px;
 	object-fit: cover;
 }

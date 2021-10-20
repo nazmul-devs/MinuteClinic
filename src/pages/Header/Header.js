@@ -19,18 +19,18 @@ const Header = () => {
 					className="justify-content-end"
 					id="responsive-navbar-nav"
 				>
-					<Navbar.Text className="d-flex align-items-center">
-						<div className="nav-link me-3 ">
-							<Link className="nav-items p-2 text-white" to="/">
+					<Navbar.Text className="d-md-flex align-items-center text-center ">
+						<div className="nav-link me-3 d-md-flex">
+							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
 							</Link>
-							<Link className="nav-items p-2 text-white" to="/">
+							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
 							</Link>
-							<Link className="nav-items p-2 text-white" to="/">
+							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
 							</Link>
-							<Link className="nav-items p-2 text-white" to="/">
+							<Link className="nav-items p-2 text-white d-block" to="/">
 								Home
 							</Link>
 						</div>

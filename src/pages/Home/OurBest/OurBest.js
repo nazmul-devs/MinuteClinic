@@ -10,7 +10,7 @@ const OurBest = () => {
 			<h2 className="text-center fw-bold my-5" style={{ color: "#42b3e5" }}>
 				Why Choose Minute Clinic ?
 			</h2>
-			<Row xs={1} sm={2} className="g-5 mb-3">
+			<Row xs={1} md={2} className="g-5 mb-3">
 				{bestServices.map((Details) => (
 					<BestService key={Details.id} details={Details} />
 				))}
