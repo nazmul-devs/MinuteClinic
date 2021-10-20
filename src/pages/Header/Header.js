@@ -9,13 +9,16 @@ const Header = () => {
 	const { user, logout } = UseFirebase();
 	console.log(user);
 	return (
-		<Navbar className="navbar">
+		<Navbar className="navbar" collapseOnSelect expand="lg">
 			<Container>
 				<Navbar.Brand as={Link} to="/">
 					<img src={logo} width="70" alt="" />
 				</Navbar.Brand>
-				<Navbar.Toggle />
-				<Navbar.Collapse className="justify-content-end">
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse
+					className="justify-content-end"
+					id="responsive-navbar-nav"
+				>
 					<Navbar.Text className="d-flex align-items-center">
 						<div className="nav-link me-3 ">
 							<Link className="nav-items p-2 text-white" to="/">
@@ -31,15 +34,21 @@ const Header = () => {
 								Home
 							</Link>
 						</div>
-						{user.email ? (
+						{user.displayName ? (
 							<>
-								<img
-									src={user.photoURL}
-									width="60"
-									height="60"
-									alt=""
-									className="rounded-circle mx-3"
-								/>
+								{user.photoUrl ? (
+									<img
+										src={user.photoURL}
+										width="60"
+										height="60"
+										alt=""
+										className="rounded-circle mx-3"
+									/>
+								) : (
+									<h5 className="text-white text-uppercase p-1 me-2 mt-2 rounded-pill border">
+										{user.displayName}
+									</h5>
+								)}
 								<button className="logout-btn" onClick={logout}>
 									<i className="fas fa-sign-out-alt"></i> Logout
 								</button>
