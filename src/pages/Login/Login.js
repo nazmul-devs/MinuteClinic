@@ -4,36 +4,36 @@ import { Form, Button } from "react-bootstrap";
 import UseFirebase from "../../Firebase/UseFirebase";
 
 const Login = () => {
-	const { googleSignIn, githubSignIn } = UseFirebase();
-	const [name, setName] = useState("");
-	const [email, setEmail] = useState("");
-	const [pass, setPass] = useState("");
+	const {
+		googleSignIn,
+		githubSignIn,
+		handleEmail,
+		handleName,
+		hanldePass,
+		handleCheck,
+		isNew,
+		createUser,
+		newUser,
+	} = UseFirebase();
 
-	const handleName = (e) => {
-		setName(e.target.value);
-	};
+	console.log(newUser);
 
-	const handleEmail = (e) => {
-		setEmail(e.target.value);
-	};
-	const hanldePass = (e) => {
-		setPass(e.target.value);
-	};
-	console.log(name);
 	return (
 		<div className="login-container">
 			<div className="login-form mx-auto bg-light rounded">
 				<Form>
 					<h2 className="login-title text-center text-uppercase pb-3 fw-bold">
-						Login here
+						{isNew ? "Registration here" : "Login here"}
 					</h2>
-					<Form.Group
-						className="mb-3"
-						controlId="formBasicEmail"
-						onBlur={handleName}
-					>
-						<Form.Control type="text" placeholder="Enter your name" />
-					</Form.Group>
+					{isNew && (
+						<Form.Group
+							className="mb-3"
+							controlId="formBasicEmail"
+							onBlur={handleName}
+						>
+							<Form.Control type="text" placeholder="Enter your name" />
+						</Form.Group>
+					)}
 					<Form.Group
 						className="mb-3"
 						controlId="formBasicEmail"
@@ -50,11 +50,21 @@ const Login = () => {
 						/>
 					</Form.Group>
 					<Form.Group className="mb-3" controlId="formBasicCheckbox">
-						<Form.Check type="checkbox" label="New here ?" />
+						<Form.Check
+							onClick={handleCheck}
+							type="checkbox"
+							label="New here ?"
+						/>
 					</Form.Group>
-					<Button variant="primary" type="submit">
-						Login
-					</Button>
+					{isNew ? (
+						<Button variant="primary" type="submit" onClick={createUser}>
+							Register
+						</Button>
+					) : (
+						<Button variant="primary" type="submit">
+							Login
+						</Button>
+					)}
 				</Form>
 				<div className="login-with text-center">
 					<p>Or register with</p>

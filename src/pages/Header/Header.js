@@ -30,7 +30,7 @@ const Header = () => {
 								Home
 							</Link>
 						</div>
-						{user.displayName ? (
+						{user.email ? (
 							<>
 								<img
 									src={user.photoURL}
