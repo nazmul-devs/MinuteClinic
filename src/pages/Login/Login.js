@@ -14,6 +14,7 @@ const Login = () => {
 		isNew,
 		createUser,
 		newUser,
+		error,
 	} = UseFirebase();
 
 	console.log(newUser);
@@ -25,6 +26,7 @@ const Login = () => {
 					<h2 className="login-title text-center text-uppercase pb-3 fw-bold">
 						{isNew ? "Registration here" : "Login here"}
 					</h2>
+					<p className="text-center text-warning">{error}</p>
 					{isNew && (
 						<Form.Group
 							className="mb-3"
@@ -56,15 +58,9 @@ const Login = () => {
 							label="New here ?"
 						/>
 					</Form.Group>
-					{isNew ? (
-						<Button variant="primary" type="submit" onClick={createUser}>
-							Register
-						</Button>
-					) : (
-						<Button variant="primary" type="submit">
-							Login
-						</Button>
-					)}
+					<Button variant="primary" type="submit" onClick={createUser}>
+						{isNew ? "Register" : "Login"}
+					</Button>
 				</Form>
 				<div className="login-with text-center">
 					<p>Or register with</p>

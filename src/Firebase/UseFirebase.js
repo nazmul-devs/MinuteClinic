@@ -6,6 +6,7 @@ import {
 	signOut,
 	GithubAuthProvider,
 	createUserWithEmailAndPassword,
+	signInWithEmailAndPassword,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import InitialFirebase from "./InitialFirebase";
@@ -15,6 +16,7 @@ const auth = getAuth();
 const UseFirebase = () => {
 	const [user, setUser] = useState({});
 	const [newUser, setNewUser] = useState("");
+	const [error, setError] = useState("");
 
 	// user input
 	const [name, setName] = useState("");
@@ -39,10 +41,25 @@ const UseFirebase = () => {
 	// create user account
 	const createUser = (e) => {
 		e.preventDefault();
-		createUserWithEmailAndPassword(auth, email, pass).then((result) => {
-			const newUser = result.user;
-			setNewUser(newUser);
-		});
+		isNew
+			? createUserWithEmailAndPassword(auth, email, pass)
+					.then((result) => {
+						const newUser = result.user;
+						setNewUser(newUser);
+						setError("");
+					})
+					.catch((error) => {
+						setError(error.message);
+					})
+			: signInWithEmailAndPassword(auth, email, pass)
+					.then((result) => {
+						const user = result.user;
+						setNewUser(user);
+						setError("");
+					})
+					.catch((error) => {
+						setError(error.message);
+					});
 	};
 	// logout implement
 	const logout = () => {
@@ -89,6 +106,7 @@ const UseFirebase = () => {
 		isNew,
 		createUser,
 		newUser,
+		error,
 	};
 };
 
