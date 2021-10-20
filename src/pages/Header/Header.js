@@ -7,6 +7,7 @@ import UseFirebase from "../../Firebase/UseFirebase";
 
 const Header = () => {
 	const { user, logout } = UseFirebase();
+	console.log(user);
 	return (
 		<Navbar className="navbar">
 			<Container>

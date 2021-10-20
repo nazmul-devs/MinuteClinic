@@ -7,6 +7,7 @@ import {
 	GithubAuthProvider,
 	createUserWithEmailAndPassword,
 	signInWithEmailAndPassword,
+	updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import InitialFirebase from "./InitialFirebase";
@@ -47,6 +48,7 @@ const UseFirebase = () => {
 						const newUser = result.user;
 						setNewUser(newUser);
 						setError("");
+						updateUserName();
 					})
 					.catch((error) => {
 						setError(error.message);
@@ -60,6 +62,15 @@ const UseFirebase = () => {
 					.catch((error) => {
 						setError(error.message);
 					});
+	};
+
+	// update user name
+	const updateUserName = () => {
+		updateProfile(auth.currentUser, { displayName: name })
+			.then(() => {})
+			.catch((error) => {
+				setError(error.message);
+			});
 	};
 	// logout implement
 	const logout = () => {
