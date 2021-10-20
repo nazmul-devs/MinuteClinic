@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import AuthProvider from "./Hooks/AuthProvider";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import Pricing from "./pages/Pricing/Pricing";
+import Team from "./pages/Team/Team";
 
 function App() {
 	return (
@@ -27,6 +28,9 @@ function App() {
 					<Route path="/pricing">
 						<Pricing />
 					</Route>
+					<PrivateRoute path="/team">
+						<Team />
+					</PrivateRoute>
 					<PrivateRoute path="/details/:serviceId">
 						<ServicesDetails />
 					</PrivateRoute>

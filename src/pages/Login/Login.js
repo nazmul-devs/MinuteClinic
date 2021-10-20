@@ -13,11 +13,8 @@ const Login = () => {
 		handleCheck,
 		isNew,
 		createUser,
-		newUser,
 		error,
 	} = UseAuth();
-
-	console.log(newUser);
 
 	return (
 		<div className="login-container">

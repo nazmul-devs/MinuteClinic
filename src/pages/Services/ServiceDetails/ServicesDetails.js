@@ -15,7 +15,6 @@ const ServicesDetails = () => {
 	}, []);
 
 	const serviceDetails = services.find((svs) => svs.id === serviceId);
-	// const { name, img, des } = serviceDetails;
 
 	return (
 		<Container>

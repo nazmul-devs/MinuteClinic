@@ -7,7 +7,6 @@ import UseAuth from "../../Hooks/UseAuth";
 
 const Header = () => {
 	const { user, logout } = UseAuth();
-	console.log(user.photoURL);
 	return (
 		<Navbar className="navbar" collapseOnSelect expand="lg">
 			<Container>
@@ -30,11 +29,11 @@ const Header = () => {
 							>
 								Pricing
 							</Link>
-							<Link className="nav-items p-2 text-white d-block" to="/">
-								Home
-							</Link>
-							<Link className="nav-items p-2 text-white d-block" to="/">
-								Home
+							<Link
+								className="nav-items p-2 text-white d-block"
+								to="/team"
+							>
+								Our Team
 							</Link>
 						</div>
 						{user.displayName ? (

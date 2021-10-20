@@ -15,6 +15,7 @@ import InitialFirebase from "./InitialFirebase";
 InitialFirebase();
 const auth = getAuth();
 const UseFirebase = () => {
+	const [loading, setLoading] = useState(true);
 	const [user, setUser] = useState({});
 	const [newUser, setNewUser] = useState("");
 	const [error, setError] = useState("");
@@ -28,16 +29,16 @@ const UseFirebase = () => {
 	const googleSignIn = () => {
 		const googleProvider = new GoogleAuthProvider();
 
-		signInWithPopup(auth, googleProvider).then((result) => {
-			const user = result.user;
-		});
+		signInWithPopup(auth, googleProvider)
+			.then((result) => {})
+			.finally(() => {
+				setLoading(false);
+			});
 	};
 	// github login implement
 	const githubSignIn = () => {
 		const gitProvider = new GithubAuthProvider();
-		signInWithPopup(auth, gitProvider).then((result) => {
-			const user = result.user;
-		});
+		signInWithPopup(auth, gitProvider).then((result) => {});
 	};
 	// create user account
 	const createUser = (e) => {
@@ -87,6 +88,7 @@ const UseFirebase = () => {
 			} else {
 				setUser({});
 			}
+			setLoading(false);
 		});
 	}, []);
 
@@ -118,6 +120,7 @@ const UseFirebase = () => {
 		createUser,
 		newUser,
 		error,
+		loading,
 	};
 };
 
