@@ -1,11 +1,12 @@
 .best-card {
 	transition: 0.5s;
 	cursor: pointer;
-	color: #021e1f;
+	color: #0788c0;
+	font-weight: bold;
 }
 
 .best-card:hover {
-	background: #041a22;
+	background: #42b3e5;
 	color: #fff;
 }
 .best-card > img {

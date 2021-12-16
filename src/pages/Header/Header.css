@@ -1,6 +1,7 @@
 .navbar {
 	background-color: #42b3e5;
 	color: white;
+	height: 60px;
 }
 .nav-link {
 	text-decoration: none;
@@ -15,6 +16,8 @@
 .login-link {
 	background: white;
 	padding: 5px 10px;
+	text-decoration: none;
+	transition: 0.3s;
 }
 .login-link:hover {
 	box-shadow: 0 2px 2px #000000;
